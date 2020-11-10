@@ -9,5 +9,5 @@ try:
         client.set_experiment_run("some-run-{}".format(i))
 except Exception as err:
     print(err)
-# finally:
-#     project.delete()
+finally:
+    project.delete()
